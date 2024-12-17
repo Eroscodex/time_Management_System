@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Management System with Smart Task Scheduling & Local Storage
+</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Time Management System with Smart Task Scheduling & Local Storage</h1>
+
+    <div id="task-form">
+      <input type="text" id="task-title" placeholder="Task Title" required>
+      <textarea id="task-description" placeholder="Task Description" required></textarea>
+      <input type="datetime-local" id="task-due-date" required>
+      <select id="task-priority">
+        <option value="low">Low Priority</option>
+        <option value="medium">Medium Priority</option>
+        <option value="high">High Priority</option>
+      </select>
+      <button id="add-task">Add Task</button>
+    </div>
+
+    <input type="text" id="task-search" placeholder="Search Tasks..." />
+
+    <div id="task-count"></div>
+    <div id="daily-summary"></div>
+    <div id="weekly-overview"></div>
+
+    <ul id="task-list"></ul>
+  </div>
+
+  <nav class="footer">
+    <div class="footer-text">
+      NoCopyRight &copy; <span id="footer-text"></span>: 
+      <a href="">KARL NICKO L. ALONDRA. BSIT-2C</a>
+    </div>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
